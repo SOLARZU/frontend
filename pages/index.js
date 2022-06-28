@@ -14,7 +14,7 @@ export default function Home() {
       setContract(con);
       const amount = document.getElementById("input").value;
       setBalance((await contract.yield_deposits(account)).toString());
-      await con.depositYeild(amount,{from:add,value:ethers.utils.parseEther(""+amount)});
+      await con.depositYeild(amount,{from:add,value:ethernpms.utils.parseEther(""+amount)});
     }
     catch(err){
       alert(err.message)
